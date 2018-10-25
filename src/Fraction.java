@@ -7,14 +7,22 @@ import java.io.*;
       {
           this.num = 10;
           this.den = 7;
-
-
       }
 
 
-      public String toString()
+      public String toStringFraction()
       {
-        return   this.num + "\n--\n" + this.den;
+        return "\n" + this.num + "/" + this.den;
+      }
+
+      public String toStringFloat()
+      {
+        return "\n" + (float)this.num/this.den;
+      }
+
+      public String toStringString()
+      {
+        return "\n" + this.num + " sur " + this.den; 
       }
 
       public Fraction(String n, String d)
