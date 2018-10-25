@@ -25,7 +25,7 @@ import java.io.*;
         else
         {
           System.out.println(" Le num n'est pas un entier ou = 0");
-          
+          System.exit(0);
         }
         if (d == (int)d) {
           this.den = d;

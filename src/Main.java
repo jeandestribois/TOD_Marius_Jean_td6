@@ -12,8 +12,9 @@ public class Main{
         System.out.println("Saisisez le den :");
         int den = Integer.parseInt(sc.nextLine());
 
+          f = new Fraction(num,den);
 
-      //  System.out.println(f.toString());
+          System.out.println(f.toString());
 
 
     }
