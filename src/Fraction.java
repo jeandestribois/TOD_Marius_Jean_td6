@@ -14,7 +14,7 @@ import java.io.*;
 
       public String toString()
       {
-        return   this.num + "\n--\n" + this.den;
+        return   this.num + " / " + this.den;
       }
 
       public Fraction(String n, String d)
@@ -29,4 +29,38 @@ import java.io.*;
           System.exit(0);
         }
       }
+
+      public void test_egalite(Fraction tmp)
+      {
+        double first,second;
+        first = (double)num/den;
+        second = (double)tmp.num / tmp.den;
+        if(Double.compare(first,second) == 0) {
+          System.out.println("Les fonctions sont egales ");
+
+        }
+        else {
+          System.out.println("Les fonctions ne sont pas egales apres reduction");
+        }
+      }
+      public void test_comparaison(Fraction tmp)
+      {
+        double first,second;
+        first = (double)num/den;
+        second = (double)tmp.num / tmp.den;
+        if (first > second) {
+            System.out.println("First est >");
+        }
+        if (first < second) {
+            System.out.println("First est <");
+        }
+        if (first == second) {
+            System.out.println("First est = Second ");
+
+        }
+
+
+      }
+
+
 }

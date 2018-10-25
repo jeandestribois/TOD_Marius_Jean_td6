@@ -16,6 +16,12 @@ public class Main{
 
           System.out.println(f.toString());
 
+        Fraction tmp = new Fraction("3","6");
+
+        f.test_egalite(tmp);
+        f.test_comparaison(tmp);
+
+
 
     }
 }
