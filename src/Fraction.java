@@ -17,25 +17,16 @@ import java.io.*;
         return   this.num + "\n--\n" + this.den;
       }
 
-      public Fraction(int n, int d)
+      public Fraction(String n, String d)
       {
-        if (n != 0 && n == (int)n) {
-          this.num = n;
+        try {
+          this.num = Integer.parseInt(n);
+          this.den = Integer.parseInt(d);
         }
-        else
+        catch(NumberFormatException e)
         {
-          System.out.println(" Le num n'est pas un entier ou = 0");
+          System.err.println("Erreur : l'un des nombres donné n'est pas un entier");
           System.exit(0);
         }
-        if (d == (int)d) {
-          this.den = d;
-        }
-        else
-        {
-        System.out.println(" Le den n'est pas un entier");
-
-        }
       }
-
-
-  }
+}

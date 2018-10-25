@@ -8,9 +8,9 @@ public class Main{
 
         System.out.println("\n°_°\n");
         System.out.println("Saisisez le num :");
-        int num = Integer.parseInt(sc.nextLine());
+        String num = sc.nextLine();
         System.out.println("Saisisez le den :");
-        int den = Integer.parseInt(sc.nextLine());
+        String den = sc.nextLine();
 
           f = new Fraction(num,den);
 
